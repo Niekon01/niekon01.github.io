@@ -5,7 +5,37 @@ body {
 	font-size: 25px;
 }
 
+.curve {
+	font-family: 'Calligraffitti', cursive;
+}
+
 #top-area {
 	width: 100%;
 	min-height: 100vh;
+	background-image: url('../img/main-header-back.jpg');
+	background-size: cover;
+	background-attachment: fi
+}
+
+.header-text {
+	font-size: 50px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 2px 2px 2px #1d1d1d;
+	padding-top: 10%;
+}
+
+.welcome {
+	animation: rise 1.5s ease;
+}
+
+@keyframes rise {
+	0% {
+		opacity: 0;
+		transform: translateY(80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
