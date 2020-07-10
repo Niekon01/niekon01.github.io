@@ -5,37 +5,15 @@ body {
 	font-size: 25px;
 }
 
-.curve {
-	font-family: 'Calligraffitti', cursive;
-}
-
-#top-area {
-	width: 100%;
+#main_header {
 	min-height: 100vh;
-	background-image: url('../img/main-header-back.jpg');
+	background-image: url(../img/main-header-bg.jpg);
 	background-size: cover;
-	background-attachment: fixed;
 }
 
-.header-text {
-	font-size: 50px;
-	font-weight: bold;
-	color: #fff;
-	text-shadow: 2px 2px 2px #1d1d1d;
-	padding-top: 10%;
-}
-
-.welcome {
-	animation: rise 1.5s ease;
-}
-
-@keyframes rise {
-	0% {
-		opacity: 0;
-		transform: translateY(80px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
+@media only screen and (max-width: 1000px) {
+	#main_header {
+		background-size: auto 1000px;
+		background-position: -700px 0px;
 	}
 }
