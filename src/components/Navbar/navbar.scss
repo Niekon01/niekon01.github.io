@@ -35,5 +35,57 @@
         }
       }
     }
+
+    .burger-icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    .logo {
+      padding-left: 30px;
+    }
+    .nav-links {
+      padding-right: 30px;
+      ul {
+        display: none;
+      }
+      .burger-icon {
+        display: block;
+      }
+    }
+
+    .nav-mobile {
+      position: absolute;
+      top: 60px;
+      left: 52px;
+      width: 307px;
+      height: 237px;
+      box-shadow: 0px 2px 10px #ccc;
+    }
+  }
+
+  .nav-res-links {
+    text-align: center;
+
+    ul {
+      li {
+        list-style-type: none;
+        padding: 0 15px;
+        margin: 20px;
+        a {
+          font-size: 18px;
+          color: $body-font-color;
+          &:hover {
+            color: $a-color;
+          }
+        }
+        .btn {
+          margin: 21px;
+        }
+      }
+    }
   }
 }
