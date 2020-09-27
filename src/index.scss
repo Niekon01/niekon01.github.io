@@ -1,6 +1,40 @@
 $font-family: 'Roboto', sans-serif;
+$font-size: 15px;
+$body-font-color: #333333;
+// font weights
+$lighter: 300;
+$normal: 400;
+$bold: 700;
+// anchor tags
+$a-color: #368fec;
+$a-active: #137ae6;
+//button
+$btn-primary: #3693f0;
+
+// ...
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+  font-size: $font-size;
   font-family: $font-family;
-  font-weight: 400;
+  color: $body-font-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: #ffffff !important;
+  border-radius: 10px;
+  background-color: $a-color;
+
+  &:active {
+    background-color: $a-active;
+  }
 }
