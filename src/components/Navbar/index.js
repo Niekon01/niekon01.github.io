@@ -7,23 +7,23 @@ class index extends Component {
     super(props);
 
     this.state = {
-      navlinksmob: false,
+      navlinksmobstate: false,
     };
   }
 
   handleToggleClick = () => {
     //console.log(this.state.navlinksmob);
     let val = true;
-    if (this.state.navlinksmob) {
+    if (this.state.navlinksmobstate) {
       val = false;
     }
 
     this.setState({
-      navlinksmob: val,
+      navlinksmobstate: val,
     });
   };
   renderIcon = () => {
-    if (this.state.navlinksmob) {
+    if (this.state.navlinksmobstate) {
       return (
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
           <rect
@@ -66,34 +66,12 @@ class index extends Component {
       );
     }
   };
-  showMenu = () => {
-    if (this.state.navlinksmob)
-      return (
-        <div className="nav-mobile">
-          <div className="nav-res-links">
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Languages</a>
-              </li>
-              <li>
-                <a href="#">Skills</a>
-              </li>
-              <li>
-                <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#" className="btn">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      );
-    else return null;
+  responsiveClassName = () => {
+    if (this.state.navlinksmobstate) {
+      return 'nav-mobile nav-menu-open';
+    } else {
+      return 'nav-mobile';
+    }
   };
 
   render() {
@@ -126,7 +104,29 @@ class index extends Component {
             {this.renderIcon()}
           </div>
         </div>
-        {this.showMenu()}
+        <div className={this.responsiveClassName()}>
+          <div className="nav-res-links">
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Languages</a>
+              </li>
+              <li>
+                <a href="#">Skills</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#" className="btn">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
