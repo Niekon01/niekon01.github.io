@@ -46,20 +46,14 @@ class index extends Component {
       );
     } else {
       return (
-        <svg
-          width="25"
-          height="17"
-          viewBox="0 0 25 17"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect y="6.80756" width="25" height="3" rx="1.5" fill="#6C6C6C" />
+        <svg width="20" height="17" viewBox="0 0 20 17" fill="none">
+          <rect y="6.80756" width="20" height="3" rx="1.5" fill="#6C6C6C" />
           <path
-            d="M0 3C0 1.34315 1.34315 0 3 0H22C23.6569 0 25 1.34315 25 3V3H0V3Z"
+            d="M0 3C0 1.34315 1.34315 0 3 0H17C18.6569 0 20 1.34315 20 3V3H0V3Z"
             fill="#6C6C6C"
           />
           <path
-            d="M0 13.7453H25V13.7453C25 15.4021 23.6569 16.7453 22 16.7453H3C1.34315 16.7453 0 15.4021 0 13.7453V13.7453Z"
+            d="M0 13.7453H20V13.7453C20 15.4021 18.6569 16.7453 17 16.7453H3C1.34315 16.7453 0 15.4021 0 13.7453V13.7453Z"
             fill="#6C6C6C"
           />
         </svg>
