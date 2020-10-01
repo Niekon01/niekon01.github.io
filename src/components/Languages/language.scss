@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+.languages {
+  height: 670px;
+  background-color: $other-background;
+  text-align: center;
+
+  .heading {
+    font-size: 35px;
+    color: #000000;
+    font-weight: $lighter;
+    padding: 50px 0px 40px 0px;
+  }
+
+  .row-1 {
+    margin: 0px auto 100px auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .row-2 {
+    margin: 100px auto 0px auto;
+    width: 62%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .svg-left {
+    position: absolute;
+    top: 930px;
+    left: 66px;
+  }
+
+  .svg-right {
+    position: absolute;
+    top: 930px;
+    right: 66px;
+  }
+}
+
+@media (max-width: 820px) {
+  .languages {
+    margin-top: 80px;
+
+    .heading {
+      font-size: 25px;
+    }
+  }
+}
