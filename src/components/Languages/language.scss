@@ -40,10 +40,26 @@
 
 @media (max-width: 820px) {
   .languages {
-    margin-top: 80px;
+    margin-top: 110px;
+    height: 570px;
 
     .heading {
       font-size: 25px;
+    }
+
+    .row-1 {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+
+    .row-2 {
+      width: 68%;
+      margin: 60px auto 0px auto;
+    }
+
+    .svg-left,
+    .svg-right {
+      display: none;
     }
   }
 }
