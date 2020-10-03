@@ -33,6 +33,11 @@ body {
 
 a {
   text-decoration: none;
+  color: $a-color;
+
+  &:hover {
+    color: $a-active;
+  }
 }
 
 .btn {

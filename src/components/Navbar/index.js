@@ -77,7 +77,7 @@ class index extends Component {
         <div className="nav-links">
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#lang">Languages</a>
@@ -102,7 +102,7 @@ class index extends Component {
           <div className="nav-res-links">
             <ul>
               <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
                 <a href="#lang">Languages</a>
