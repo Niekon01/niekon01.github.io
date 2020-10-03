@@ -72,7 +72,9 @@ class index extends Component {
     return (
       <div className="navbar">
         <div className="logo">
-          <span className="brand">Adarsh Kumar</span>
+          <a href="/" className="brand">
+            Adarsh Kumar
+          </a>
         </div>
         <div className="nav-links">
           <ul>
