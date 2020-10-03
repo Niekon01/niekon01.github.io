@@ -80,7 +80,7 @@ class index extends Component {
               <a href="#">About</a>
             </li>
             <li>
-              <a href="#">Languages</a>
+              <a href="#lang">Languages</a>
             </li>
             <li>
               <a href="#">Skills</a>
@@ -105,7 +105,7 @@ class index extends Component {
                 <a href="#">About</a>
               </li>
               <li>
-                <a href="#">Languages</a>
+                <a href="#lang">Languages</a>
               </li>
               <li>
                 <a href="#">Skills</a>

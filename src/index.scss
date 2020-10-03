@@ -16,6 +16,9 @@ $a-active: #137ae6;
 $btn-primary: #3693f0;
 
 // ...
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
