@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .about {
-  height: 400px;
+  height: 600px;
 
   .heading {
     text-align: center;
@@ -12,7 +12,7 @@
   }
 
   .content {
-    height: 100%;
+    max-height: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
